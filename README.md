@@ -85,7 +85,7 @@ try {
 
 Example app includes other packages such
 as [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications)
-and [firebase_messaging,](https://pub.dev/packages/firebase_messaging) but it's not required as its being used to show
+and [firebase_messaging](https://pub.dev/packages/firebase_messaging), but it's not required as its being used to show
 the notification on the device and also to obtain user's registration token.
 
 User is also required to set up their [firebase](https://firebase.google.com/docs/flutter/setup) for their project and insert their own FCM API in order for the example app to run expectedly
@@ -109,8 +109,8 @@ User is also required to set up their [firebase](https://firebase.google.com/doc
 
 #### ⚠️ Warning
 
-1. FlutterFCMWrapperInvalidDataException will be thrown if topicName and condition **is being provided** at the same time
-2. FlutterFCMWrapperInvalidDataException will be thrown if topicName and condition **is not being provided** at the same time
+1. [FlutterFCMWrapperInvalidDataException] will be thrown if [topicName] and [condition] **is being provided** at the same time
+2. [FlutterFCMWrapperInvalidDataException] will be thrown if [topicName] and [condition] **is not being provided** at the same time
 
 ### 🪙 Token Message
 
@@ -120,8 +120,8 @@ User is also required to set up their [firebase](https://firebase.google.com/doc
 
 #### ⚠️ Warning
 
-1. FlutterFCMWrapperInvalidDataException will be thrown if userRegistrationTokens is empty
-2. FlutterFCMWrapperInvalidDataException will be thrown if userRegistrationTokens length is more than 1000
+1. [FlutterFCMWrapperInvalidDataException] will be thrown if [userRegistrationTokens] is empty
+2. [FlutterFCMWrapperInvalidDataException] will be thrown if [userRegistrationTokens] length is more than 1000
 
 ### 📝 Parameters
 
@@ -135,7 +135,7 @@ User is also required to set up their [firebase](https://firebase.google.com/doc
 | bodyLocArgs           | `List<Map<String, String>>` |       -       |    ✅     | Used as format specifiers for the bodyLocKey                                                                       |            
 | subtitle              | `String`                    |       -       |    ✅     | Subtitle of the notification                                                                                       |             
 | collapseKey           | `String`                    |       -       |    ✅     | Used to group the notification                                                                                     |             
-| isHighPriority        | `bool`                      |    `true`    |    ❌     | Priority of the notification                                                                                       |             
+| isHighPriority        | `bool`                      |    `true`     |    ❌     | Priority of the notification                                                                                       |             
 | contentAvailable      | `bool`                      |       -       |    ✅     | Application will be woken if set to true                                                                           |             
 | mutableContent        | `Map<String,bool>`          |       -       |    ✅     | Ability to modify the notification's content before displaying it (Apple Platform only)                            |             
 | timeToLive            | `int`                       |       -       |    ✅     | How long the message should be kept in the FCM storage when device is offline                                      |             
@@ -154,9 +154,9 @@ User is also required to set up their [firebase](https://firebase.google.com/doc
 
 #### ⚠️ Warning
 
-1. FlutterFCMWrapperInvalidDataException will be thrown if title and titleLocKey is provided at the same time
-2. FlutterFCMWrapperInvalidDataException will be thrown if body and bodyLocKey is provided at the same time
-2. FlutterFCMWrapperInvalidDataException will be thrown if other parameters is provided and isDataMessage is set to true at the same time
+1. [FlutterFCMWrapperInvalidDataException] will be thrown if [title] and [titleLocKey] is provided at the same time
+2. [FlutterFCMWrapperInvalidDataException] will be thrown if [body] and [bodyLocKey] is provided at the same time
+2. [FlutterFCMWrapperInvalidDataException] will be thrown if other parameters is provided and [isDataMessage] is set to true at the same time
 
 ### 😵 Exceptions
 
