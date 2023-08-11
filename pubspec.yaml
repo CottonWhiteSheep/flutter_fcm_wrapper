@@ -1,6 +1,6 @@
 name: flutter_fcm_wrapper
 description: A Flutter wrapper package for FCM REST API to make it easier to send FCM from Flutter.
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/CottonWhiteSheep/flutter_fcm_wrapper
 issue_tracker: https://github.com/CottonWhiteSheep/flutter_fcm_wrapper/issues
 
@@ -11,16 +11,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.13.4
+  http: ^1.1.0
 
   flutter_web_plugins:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
+  plugin_platform_interface: ^2.1.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.2
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
